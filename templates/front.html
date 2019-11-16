@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}	
+	<table>
+		<tr>
+			{% if img_url %}
+				<td>
+					<img class="gmap-img" src="{{img_url}}" height="300" width="300">
+				</td>
+			{% endif %}
+			<td style="width:500px; text-align:right;">
+				<a class="login-link" href="/blog/newpost">+new</a>
+			</td>
+		</tr>
+	</table>
+	{% for p in posts %}
+		{{ p.render() | safe}}
+		<br><br>
+	{% endfor %}
+	
+	<div class="age">
+	{{age}}
+	</div>
+{% endblock %}
+	
