@@ -1,1 +1,1 @@
-#Blog
+This code contains the project/assignment I did for the web development course on Udacity. This application has all interactive functions such are register and login users, show the top and most recent blogs, allow users to add/edit blog posts. The back end works on GoogleApp engine datastore.
